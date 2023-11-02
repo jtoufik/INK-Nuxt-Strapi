@@ -54,6 +54,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    // ...
+    buildDir: 'dist', // Make sure this is set to 'dist'
   },
   // nuxt.config.js
 
