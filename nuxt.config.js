@@ -54,19 +54,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    buildDir: 'dist',
-
-    // Ensure that the assets are output to 'dist' directory
-    assetsPublicPath: '/',
-
-    // Add this property to set the output directory for static assets
-    publicPath: '/_nuxt/',
-
-    // Add this property to set the output directory for server files
-    // Note that this is specifically for server files and is not usually required
-    serverMiddleware: {
-      path: '/_server',
-    },
+    src: './dist',
+    use: '@vercel/static',
   },
   // nuxt.config.js
 
